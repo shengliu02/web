@@ -12,7 +12,7 @@ class App extends Component {
             error: {
                 message: ''
             },
-            sheng_img: require('./images/Sheng.jpg'),
+            sheng_img: require('./images/Sheng.png'),
             github:require('./images/gh.svg'),
             email:require('./images/envelope.png')
             
@@ -102,7 +102,7 @@ class App extends Component {
 
         return(
         <div className="App-main">
-            <div className="container-fluid">
+            <div className="container-fluid" >
                 <nav className="navbar nav-bar navbar-inverse navbar-fixed-top">
                     <ul className="nav navbar-nav" >
                         <li className="nav-item" >
