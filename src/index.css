@@ -1,0 +1,135 @@
+
+/* navigator bar + first(Sheng) section*/
+.navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.nav-bar{
+    padding-top: 1.5%;
+    background-color: transparent;
+    border: none;
+}
+
+.nav-link {
+    font-size: 15px;
+    color: white;
+}
+
+
+.profileIMG-circle{
+    border-radius: 50%;
+    height: 10%;
+    width: 15%;
+}
+
+/* Body section */
+body{
+    margin:0;
+    font: 20px Montserrat;
+    line-height: 1.8;
+    text-align: center;
+    background-color: #222;
+
+}
+
+p {
+    font-size: 14px;
+}
+
+.margin {
+    margin-bottom: 45px;
+}
+
+.about-bg{
+    color:white;
+}
+
+.mission-bg {
+    background-color: white;
+    color: black;
+
+}
+
+.container-fluid-self {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.container-fluid{
+    background-image: url('./images/code.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.div-left{
+    float: left;
+    margin-left: 10%;
+}
+
+.div-right{
+    text-align: justify;
+    margin-left: 45%;
+}
+
+.div-title{
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+
+.tech-item{
+    font-size: 70%;
+    margin: 1%;
+}
+
+
+span {
+    white-space: pre;
+}
+/* foot section */
+
+.contact-bg {
+    color: white;
+}
+
+.link{
+    text-decoration: none;
+    color:white;
+}
+
+.social-icon-item {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    border: none;
+    list-style: none;
+}
+.social-icon-img{
+    height: 45px;
+    width: 45px;
+}
+
+
+/* After Google login function
+.btn{
+    margin: 6px;
+}
+
+#log-suces{
+    color: aliceblue;
+    margin: 11px;
+}
+
+#profile-photo{
+    width: 26px;
+    height: 20px;
+    margin: 11px;
+}
+
+.show-after-log{
+
+    display: none;
+}*/
+
