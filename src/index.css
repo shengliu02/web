@@ -1,13 +1,15 @@
 
 /* navigator bar + first(Sheng) section*/
-.navbar-nav {
+.navbar-nav{
     display: inline-block;
     float: none;
     vertical-align: top;
+    
 }
 
 .nav-bar{
     padding-top: 1.5%;
+    background-image: none;
     background-color: transparent;
     border: none;
 }
@@ -24,23 +26,27 @@
     width: 15%;
 }
 
+/* Shared properties*/
+.container-fluid-self {
+    padding-top: 10%;
+    padding-bottom: 6%;
+}
+
+
+
+
 /* Body section */
 body{
     margin:0;
-    font: 20px Montserrat;
+    font: 13.74% Montserrat;
     line-height: 1.8;
     text-align: center;
     background-color: #222;
-
+    color:white;
 }
 
-p {
-    font-size: 14px;
-}
 
-.margin {
-    margin-bottom: 45px;
-}
+
 
 .about-bg{
     color:white;
@@ -52,20 +58,16 @@ p {
 
 }
 
-.container-fluid-self {
-    padding-top: 100px;
-    padding-bottom: 70px;
-}
-
 .container-fluid{
+
     background-image: url('./images/code.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 140%;
 }
 
 .div-left{
     float: left;
-    margin-left: 10%;
+    margin-left: 7%;
 }
 
 .div-right{
@@ -80,14 +82,22 @@ p {
 
 
 .tech-item{
-    font-size: 70%;
+    font-size: 950%;
     margin: 1%;
 }
 
-
-span {
-    white-space: pre;
+p,h5,h4,h3{
+    font-size: 1000%;
 }
+
+h2{
+    font-size: 1500%;
+}
+
+.job-description{
+    padding-right: 15%;
+}
+
 /* foot section */
 
 .contact-bg {
@@ -110,6 +120,8 @@ span {
     height: 45px;
     width: 45px;
 }
+
+
 
 
 /* After Google login function

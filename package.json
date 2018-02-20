@@ -2,7 +2,7 @@
   "name": "personal-page",
   "version": "0.1.0",
   "private": true,
-  "home": "https://sheng1302.github.io/web/",
+  "homepage": "https://sheng1302.github.io/web/",
   "dependencies": {
     "firebase": "^4.9.0",
     "react": "^16.2.0",
