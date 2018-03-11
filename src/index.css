@@ -75,6 +75,14 @@ body{
     margin-left: 45%;
 }
 
+@media (max-width: 600px) {
+    .div-column {
+        width: 100%;
+        margin-left: 3%;
+    }
+
+}
+
 .div-title{
     font-weight: bold;
     margin-bottom: 3%;

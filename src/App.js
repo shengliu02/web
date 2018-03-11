@@ -12,9 +12,18 @@ class App extends Component {
             error: {
                 message: ''
             },
-            sheng_img: require('./images/Sheng.png'),
-            github:require('./images/gh.svg'),
-            email:require('./images/envelope.png')
+            github: {
+                url:"http://github.com/sheng1302",
+            },
+            personal: {
+                url: "mailto:sheng1302@gmail.com"
+            },
+            images:{
+                git_img:require('./images/gh.svg'),
+                email_img: require('./images/envelope.png'),
+                sheng_img: require('./images/Sheng.png')
+
+            }
             
         }
 
@@ -125,7 +134,7 @@ class App extends Component {
                 </nav>
 
                 <div className="container-fluid-self">
-                    <img className = "profileIMG-circle" src={this.state.sheng_img} alt="Sheng Liu" />
+                    <img className = "profileIMG-circle" src={this.state.images.sheng_img} alt="Sheng Liu" />
                     <br/>
                     <h2>> Hello, I am Sheng Liu</h2>
                     <div className="content">
@@ -141,13 +150,12 @@ class App extends Component {
 
 
             <div className="container-fluid-self mission-bg" id="resume">
-                <div className="div-row">
-                    <div className="div-column div-education">
-                        <div className="div-left">
+                <div className="div-row div-education">
+                        <div className="div-column div-left">
                             <h2>Education</h2>
                         </div>
 
-                        <div className="div-right ">
+                        <div className="div-column div-right ">
                         
                             <h4 className="div-title">Bachelor of Computer Science</h4>
                             <h5 >Brooklyn College, The City University Of New York, New York, NY, Anticipated Diploma: May 2019</h5>
@@ -158,23 +166,21 @@ class App extends Component {
 
                         </div>
 
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </div>
 
-                    </div>
+                <div className="div-row div-skills">
 
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-
-
-                    <div className="div-column div-skills">
-                        <div className="div-left">
+                        <div className="div-column div-left">
                             <h2>Technologies</h2>
                         </div>
 
-                        <div className="div-right">
+                        <div className="div-column div-right">
                                 <h4 className="div-title">Familiar Language and Framework:</h4>
                                 <ul className="div-techlist">
                                 <li className="tech-item">Java</li>
@@ -195,9 +201,8 @@ class App extends Component {
 
                         
                         </div>
+
                     </div>
-
-
                     <br/>
                     <br/>
                     <br/>
@@ -205,12 +210,12 @@ class App extends Component {
                     <br/>
                     <br/>
 
-                    <div className="div-columndiv-experience">
-                        <div className="div-left">
+                    <div className="div-row div-experience">
+                        <div className="div-column div-left">
                             <h2>Work Experience</h2>
                         </div>
 
-                        <div className="div-right">
+                        <div className="div-column div-right">
                             <i><h4 className="div-title">Data Analyst, Peer Mentor</h4></i>
                             <h5>Borough of Manhattan Community College,New York, NY, Feburary 2016 - Present</h5>
                             <p className="job-description">
@@ -249,7 +254,6 @@ class App extends Component {
                     </div>
 
                 </div>
-            </div>
 
 
             <div className="container-fluid-self contact-bg" id="contact">
@@ -258,13 +262,13 @@ class App extends Component {
                     <h2>Aspiring to become a Software Engineer.</h2>
                     <ul className="social-icon-list">
                         <li className="social-icon-item"> 
-                            <a className="link" href="http://github.com/sheng1302" >
-                                <img className="social-icon-img" src={this.state.github} alt="More projects on github"/> </a>
+                            <a className="link" href={this.state.github.url}>
+                                <img className="social-icon-img" src={this.state.images.git_img} alt="More projects on github"/> </a>
                         </li>
 
                         <li className="social-icon-item"> 
-                            <a className="link" href="mailto:sheng1302@gmail.com" >
-                                <img className="social-icon-img" src={this.state.email} alt="Contact me through Email"/> </a>
+                            <a className="link" href={this.state.personal.url} >
+                                <img className="social-icon-img" src={this.state.images.email_img} alt="Contact me through Email"/> </a>
                         </li>
 
                     </ul>
