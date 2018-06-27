@@ -1,5 +1,4 @@
 .navbar-fixed-left{
-    position: fixed;
     background-image: url("../images/bg.jpg");
     background-size: cover;
     height: 320px;
@@ -17,9 +16,9 @@
 }
 
 .container{
-    padding-top: 350px;
+    padding-top: 0px;
     padding-left: 20px;
-    padding-right: 0px;
+    padding-right: 20px;
 }
 
 .indent{
@@ -29,7 +28,7 @@
 .blog-body{
     text-align: initial;
     padding-left: 5%;
-    padding-right:20%;
+    padding-right:5%;
 }
 
 @media (min-width:900px){ /*(pc version) when width is greater than 768px*/
@@ -38,15 +37,20 @@
     }
 
     .navbar-fixed-left{
+        position: fixed;
         width: 50%;
         height: 100%;
     }
 
     .container{
         padding-top: 68px;
-        padding-left: 40%;
-        margin-right: 40px;
-        margin-left: 15%;
+        padding-left: 54%;
+        width: 100%;
+
+        /*
+        padding-right: 120px;
+        margin-right: 40%;
+        margin-left: 15%;*/
     }
 
 

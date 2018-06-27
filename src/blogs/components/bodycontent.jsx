@@ -24,9 +24,7 @@ class BodyContent extends Component{
 
                     <div className="blog-body">
                         {/* all the body paragraphs*/}
-                        <p className="indent"> Thailand trip was awsome! And made lots of friend.
-                        Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                        <p className="indent"> Thailand trip was awsome! And made lots of friend. Continues .... Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
                         blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
                         blah blah blah blah blah blah
                         </p>
