@@ -1,0 +1,55 @@
+.navbar-fixed-left{
+    position: fixed;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    height: 320px;
+    width: 100%;
+}
+
+.navbar-header{
+    width: 100%;
+    
+}
+
+.blog-header{
+
+    padding-left: 10px;
+}
+
+.container{
+    padding-top: 350px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.indent{
+    text-indent: 20px;
+}
+
+.blog-body{
+    text-align: initial;
+    padding-left: 5%;
+    padding-right:20%;
+}
+
+@media (min-width:900px){ /*(pc version) when width is greater than 768px*/
+    .navbar-fixed-left .navbar-collapse .navbar-nav > li{
+        width: 100%;
+    }
+
+    .navbar-fixed-left{
+        width: 50%;
+        height: 100%;
+    }
+
+    .container{
+        padding-top: 68px;
+        padding-left: 40%;
+        margin-right: 40px;
+        margin-left: 15%;
+    }
+
+
+}
+
+

@@ -14,6 +14,7 @@
     border: none;
 }
 
+
 .nav-link {
     font-size: 15px;
     color: white;
@@ -38,7 +39,7 @@
 /* Body section */
 body{
     margin:0;
-    font: 13.74% Montserrat;
+    font: Montserrat;
     line-height: 1.8;
     text-align: center;
     background-color: #222;
@@ -62,7 +63,7 @@ body{
 
     background-image: url('./images/code.jpg');
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: cover;
 }
 
 .div-left{
@@ -73,6 +74,7 @@ body{
 .div-right{
     text-align: justify;
     margin-left: 45%;
+    padding-right: 7%;
 }
 
 @media (max-width: 600px) {
@@ -89,18 +91,18 @@ body{
 }
 
 
-.tech-item{
-    font-size: 950%;
-    margin: 1%;
+.div-techlist{
+    margin: 2%;
+
 }
 
-p,h5,h4,h3{
-    font-size: 1000%;
+/*p,h5,h4,h3{
+    font-size: 100%;
 }
 
 h2{
     font-size: 1500%;
-}
+}*/
 
 .job-description{
     padding-right: 15%;
@@ -127,6 +129,10 @@ h2{
 .social-icon-img{
     height: 45px;
     width: 45px;
+}
+
+.head-content > p{
+    font-size: 90%;
 }
 
 
