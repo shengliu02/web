@@ -14,7 +14,7 @@ class BodyContent extends Component{
                             Thailand Trip 
                         </h4>
                         <p className="date">
-                            Updated Date: Feburary 2018.
+                            Updated Date: June 28, 2018.
                         </p>
 
                     </div>
@@ -24,9 +24,7 @@ class BodyContent extends Component{
 
                     <div className="blog-body">
                         {/* all the body paragraphs*/}
-                        <p className="indent"> Thailand trip was awsome! And made lots of friend. Continues .... Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                        blah blah blah blah blah blah
+                        <p className="indent"> Come back later, Sheng is still working on his journal and web page contructions. :) 
                         </p>
                     </div>
                 </div>

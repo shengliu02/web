@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from "react-router-dom";
 import '../styles/blogs.css';
 
 class LeftNavBar extends Component {
@@ -8,8 +9,7 @@ class LeftNavBar extends Component {
             <div>
                 <nav className="navbar navbar-inverse navbar-fixed-left">
                     <div className="navbar-header">
-                        <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content" aria-expanded="false" aria-controls="navbar-content">
-                        <span className="sr-only">Toggle navigation</span>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-content" >
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
@@ -17,11 +17,10 @@ class LeftNavBar extends Component {
                         <p className="navbar-brand">Sheng's Blog</p>
                     </div>
 
-                    <div id="navbar-content" className="navbar-collapse collapse">
+                    <div id="navbar-content" className="collapse navbar-collapse">
                         <ul className="nav navbar-nav">
-                            <li><a  href="#">Thailand Trip Feb. 2018</a></li>
-                            <li><a  href="#">My Very First Blog</a></li>
-                            <li><a  href="#">What's Next? Guess What?</a></li>
+                            <li><a href="#">Thailand Trip Feb. 2018</a></li>
+                            <li><Link to="/" >Home Page</Link></li>
                         </ul>
                     </div>
 
