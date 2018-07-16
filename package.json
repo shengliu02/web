@@ -2,7 +2,7 @@
   "name": "personal-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sheng1302.github.io/web",
+  "homepage": "https://sheng1302.github.io/",
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
@@ -26,6 +26,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "dev": "webpack -d --watch",
+    "static-build":"react-scripts build",
+    "static-start":"react-scripts start",
     "start": "node ./server/index.js",
     "build": "webpack -p",
     "react-dev": "webpack -d --watch",

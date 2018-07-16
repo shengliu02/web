@@ -9,7 +9,9 @@
     width: 100%;
 }
 
-
+.title{
+    text-align: center;
+}
 
 .blog-header{
 
@@ -34,6 +36,12 @@
 nav.navbar.navbar-fixed-left {
     max-height: 100%;
     overflow-y: auto;
+}
+
+.blog-photo {
+    height: 40%;
+    width: 100%;
+
 }
 
 
