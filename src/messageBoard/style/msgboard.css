@@ -1,0 +1,16 @@
+.form-group{
+
+    padding-top: 10%;
+    color: black;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.msg-board{
+    color: white;
+}
+
+.msg-list{
+    padding-left: 0;
+}

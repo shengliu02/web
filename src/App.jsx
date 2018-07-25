@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 import { BrowserRouter as Router , Route, Switch} from 'react-router-dom';
 import Home from './about/App';
 import Blog from './blogs/App';
+import MsgBoard from './messageBoard/App';
 import PageNotFound from './public/PageNotFound';
+import './public/index.css';
 
-//ReactDOM.render(<App/>, document.getElementById('root'));
 class App extends Component {
     render(){
 
@@ -17,6 +18,7 @@ class App extends Component {
                     
                     <Route exact name="home" path="/" component={Home}/>
                     <Route name="blog" path="/blog" component={Blog}/>
+                    <Route name="msgBoard" path="/msgboard" component={MsgBoard}/>
                     <Route component={PageNotFound}/>
                 </Switch>
                 </div>

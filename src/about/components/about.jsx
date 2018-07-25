@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-
 class About extends Component{
 
     constructor(props){
         super(props);
         this.state = {
             images:{
-                sheng_img: require('../images/Sheng.png')
+                sheng_img: require('../images/Sheng.png'),
+            
             }
         }
     }
@@ -24,9 +24,9 @@ class About extends Component{
                     <h3>> Hello, I am Sheng Liu</h3>
                     <div className="head-content">
                         <br/>
-                        <p>" It's not at all important to get it right the first time. It's vitally important to get it right the last time "</p>
+                        <h5>" It's not at all important to get it right the first time. It's vitally important to get it right the last time "</h5>
                         <br/>
-                        <p>by - Andrew Hunt and David Thomas</p>
+                        <h5>by - Andrew Hunt and David Thomas</h5>
                         <br/>
                         <br/>
                     </div>
@@ -34,7 +34,7 @@ class About extends Component{
             </div>
 
 
-            <div className="container-fluid-self mission-bg" id="resume">
+            <div className="container-fluid-self body-bg" id="resume">
                 <div className="div-row div-education">
                         <div className="div-column div-left">
                             <h2>Education</h2>
