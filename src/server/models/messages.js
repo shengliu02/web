@@ -1,15 +1,14 @@
 const mongoose = require('mongoose');
 
-
 const msgSchema = new mongoose.Schema({
-    
+
     msg: {
         type:String,
         required: 'message can not be blank!'
     },
     client_name: {
         type:String,
-        required: 'name need to filled!'
+        required: 'name can not be empty'
     },
     date: {
         type:Date,
