@@ -89,13 +89,13 @@ class MessageBoard extends Component{
         <div className = "board-container">
             <div className = "container-fluid-self form-group body-bg">
 
-                <label for="usr">Your Name:  </label>
+                <label for="usr">Your Name:  </label> <span className="span"/>
                 <input type="text" id="msgInput-name" placeholder="anonymous" 
                     value={this.state.name} onChange={(e) => this.handleNameChange(e)}/><br/>
                 <label for="comment">Comment: </label><br/>
                 <textarea className="form-control" type="text" id="msgInput-message" rows = "4" placeholder="Type your comment here!"
                     value={this.state.comment} onChange={(e)=> this.handleCommentChange(e)}/><br/>
-                <input type="button" value="post" onClick={(event) => this.handleSubmit(event)}/>
+                <input type="button" class="btn btn-default" value="post" onClick={(event) => this.handleSubmit(event)}/>
 
                 <p id="statusbar">{this.state.status}</p>
 
@@ -107,8 +107,8 @@ class MessageBoard extends Component{
                     const date = new Date(item.date);
                     return(
                         <div className="msg-item">
-                            <h5> {index + 1}. {item.client_name} Commented In {date.getMonth() + "-"+ date.getDate() + "-" +date.getFullYear()}</h5>
-                            <p>{item.msg}</p>
+                            <h5 className="headtext-rendered"> {index + 1}. {item.client_name} Commented In {date.getMonth() + "-"+ date.getDate() + "-" +date.getFullYear()}</h5>
+                            <span className="qtext-rendered">{item.msg}</span>
                             <br/>
                         </div>
                     )

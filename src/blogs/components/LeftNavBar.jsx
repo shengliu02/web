@@ -20,7 +20,7 @@ class LeftNavBar extends Component {
                     <div id="navbar-content" className="collapse navbar-collapse">
                         <ul className="nav navbar-nav">
                             <li><a href="#">Thailand Trip Feb. 2018</a></li>
-                            <li><Link to="/" >Home Page</Link></li>
+                            <li><Link to="/" >Profile</Link></li>
                         </ul>
                     </div>
 

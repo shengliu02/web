@@ -7,8 +7,15 @@ class NavBar extends Component{
         return(
             
             <nav className="navbar nav-bar navbar-inverse navbar-fixed-top">
-
-                    <div className="collapse navbar-collapse">
+                    <div className="navbar-header">
+                    <button type="button" class="navbar-toggle toggle" data-toggle="collapse" data-target="#navbar-content" >
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                        </button>
+                    </div>
+                   
+                   <div className="collapse navbar-collapse" id="navbar-content">
                     <ul className="nav navbar-nav" >
                         <li className="nav-item" >
                             <Link to="/">Profile</Link></li>
@@ -17,7 +24,9 @@ class NavBar extends Component{
                         <li className="nav-item">
                             <Link to="/msgboard">Comments</Link></li>
                     </ul>
+
                     </div>
+                    
             </nav>
            
         )

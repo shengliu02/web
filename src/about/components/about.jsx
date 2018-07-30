@@ -4,10 +4,6 @@ class About extends Component{
     constructor(props){
         super(props);
         this.state = {
-            images:{
-                sheng_img: require('../images/Sheng.png'),
-            
-            }
         }
     }
 
@@ -19,7 +15,7 @@ class About extends Component{
             <div className="container-fluid" >
 
                 <div className="container-fluid-self" >
-                    <img className = "profileIMG-circle" src={this.state.images.sheng_img} alt="Sheng Liu" />
+                    <div className = "profileIMG-circle" alt="Sheng Liu"/>
                     <br/>
                     <h3>> Hello, I am Sheng Liu</h3>
                     <div className="head-content">
