@@ -107,7 +107,7 @@ class MessageBoard extends Component{
                     const date = new Date(item.date);
                     return(
                         <div className="msg-item">
-                            <h5 className="headtext-rendered"> {index + 1}. {item.client_name} Commented In {date.getMonth() + "-"+ date.getDate() + "-" +date.getFullYear()}</h5>
+                            <h5 className="headtext-rendered"> {index + 1}. {item.client_name} Commented In {date.getMonth() + 1 + "-"+ date.getDate() + "-" +date.getFullYear()}</h5>
                             <span className="qtext-rendered">{item.msg}</span>
                             <br/>
                         </div>
