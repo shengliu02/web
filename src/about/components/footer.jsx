@@ -19,7 +19,7 @@ class Footer extends Component{
     }
     render(){
         return(
-            <div className="container-fluid-self contact-bg" id="contact">
+            <div className="contact-bg" id="contact">
                
             <div className="content">
                 <h3>Aspiring to become a Software Engineer.</h3>
@@ -35,7 +35,6 @@ class Footer extends Component{
                     </li>
 
                 </ul>
-                <p>© 2018 All rights reserved.</p>
                 </div>
 
             

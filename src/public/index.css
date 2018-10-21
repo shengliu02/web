@@ -24,6 +24,12 @@
    
 }
 
+.navbar-collapse{
+    border: none;
+    border-color: transparent;
+    background: transparent;
+}
+
 
 .nav-link {
     font-size: 15px;
@@ -44,14 +50,17 @@
 /* Shared properties*/
 .container-fluid-self {
     padding-top: 13%;
-    padding-bottom: 6%;
+    padding-bottom: 12%;
 }
 
 .toggle{
     background-color: grey;
 }
 
+.parallax-visual{
+    background-attachment: fixed;
 
+}
 
 /* Body section */
 body{
@@ -63,8 +72,21 @@ body{
     color:white;
 }
 
+.display{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
+
+.visible{
+    visibility: visible;
+}
+
+.invisible{
+    visibility: hidden;
+}
 
 .about-bg{
     color:white;
@@ -76,35 +98,35 @@ body{
 
 }
 
-.container-fluid{
+.background-container{
 
-    background-image: url('../about/images/code.jpg');
+    background-image: url('../about/images/bg.gif');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .div-left{
     float: left;
-    margin-left: 7%;
+    padding-left: 7%;
 }
 
 .div-right{
     text-align: justify;
-    margin-left: 45%;
+    padding-left: 45%;
     padding-right: 7%;
 }
 
 @media (max-width: 600px) {
     .div-column {
         width: 100%;
-        margin-left: 3%;
+        padding-left: 3%;
     }
 
 }
 
 .div-title{
     font-weight: bold;
-    margin-bottom: 3%;
+    padding-bottom: 3%;
 }
 
 
@@ -129,6 +151,8 @@ h2{
 
 .contact-bg {
     color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .link{
