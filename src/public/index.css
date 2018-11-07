@@ -49,8 +49,8 @@
 
 /* Shared properties*/
 .container-fluid-self {
-    padding-top: 13%;
-    padding-bottom: 12%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .toggle{
@@ -143,11 +143,31 @@ h2{
     font-size: 1500%;
 }*/
 
-.job-description{
-    padding-right: 15%;
-}
+
 
 /* foot section */
+
+.btn-primary-white{
+    display: inline-block;
+    border-width: 2px;
+    border-style: solid;
+    background-color:transparent;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 15em;
+    transition: 0.1s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.btn-primary-white:hover{
+    background: white;
+    color: black;
+}
+
+
 
 .contact-bg {
     color: white;

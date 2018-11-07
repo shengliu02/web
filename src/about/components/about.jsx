@@ -39,18 +39,21 @@ class About extends Component{
                     <div className = "profileIMG-circle" alt="Sheng Liu"/>
                     <br/>
 
-                    <div className="display parallax-visual">
+                    <div className="display">
 
                         <h3 className="display-h"><span className={this.state.visibility}>_</span> Hello, my name is Sheng.</h3>
                     </div>
-                    <div className="head-content parallax-visual">
                         <br/>
                         <h3 >" It's not at all important to get it right the first time. It's vitally important to get it right the last time "</h3>
                         <br/>
-                        <h3>by - Andrew Hunt and David Thomas</h3>
-                        <br/>
-                        <br/>
+                        <h3>by - Andrew Hunt and David Thomasaa</h3>
+
+                    <br/>
+                    <br/>
+                    <div className="s-buttons center">
+                        <a className="btn-primary-white" href="../resume/Sheng_Resume.pdf">Resume</a>
                     </div>
+
                 </div>
 
 
@@ -149,7 +152,7 @@ Earn full stack technologies such as React, Node, Express, and PostgreSQL as wel
                             <br/><br/> 
                         <div className="div-column div-right">
                             <i><h4 className="div-title">Data Analyst, Peer Mentor</h4></i>
-                            <h5>Borough of Manhattan Community College,New York, NY, February 2016 - Present</h5>
+                            <h5>Borough of Manhattan Community College,New York, NY, February 2016 - June 2018</h5>
                             <p className="job-description"> 
                                 Work in a group size of over 8 Data Analysts. 
                                 Constantly cooperate with leadership team to analyst over 80 mentors log data, and generate useful report by using statistical
@@ -161,7 +164,7 @@ Earn full stack technologies such as React, Node, Express, and PostgreSQL as wel
                             <br/><br/>
                             
                             <i><h4 className="div-title">Computer Science Tutor</h4></i>
-                            <h5>CUNY Research Foundation,New York, NY, February 2017 - Present</h5>
+                            <h5>CUNY Research Foundation,New York, NY, February 2017 - June 2018</h5>
                             <p className="job-description">
                                 Instruct middle school students on basic math and algorithm behind coding.
                                 One-to-group tutoring mythology in HTML, CSS, Scratch, and Codester.com challenges. Cooperate host
