@@ -18,7 +18,7 @@ module.exports = {
         loader: 'style-loader!css-loader'
       },
       {
-        test: /\.jpg/,
+        test: /\.(jpg|pdf)/,
         loader: 'file-loader'
       },
       {

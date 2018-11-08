@@ -51,7 +51,7 @@ class About extends Component{
                     <br/>
                     <br/>
                     <div className="s-buttons center">
-                        <a className="btn-primary-white" href="../resume/Sheng_Resume.pdf">Resume</a>
+                        <a className="btn-primary-white" href="./resume">Resume</a>
                     </div>
 
                 </div>
