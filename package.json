@@ -41,7 +41,7 @@
     "gh-pages": "^1.1.0",
     "webpack-cli": "^3.0.8"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "description": "Sheng Liu's Personal Website - Aspiring to Become a Software Engineer.",
   "main": "index.js",
   "repository": {
     "type": "git",

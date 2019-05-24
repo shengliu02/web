@@ -10,6 +10,7 @@ class MessageBoard extends Component{
             comment : "",
             items : [],
             status : "",
+            month: ["Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."],
         };
 
     }
@@ -86,35 +87,55 @@ class MessageBoard extends Component{
 
     render(){
         return(
-        <div className = "board-container">
-            <div className = "container-fluid-self form-group body-bg">
+        <div className = "board-container section-height-full overlay">
 
-                <label for="usr">Your Name:  </label> <span className="span"/>
-                <input type="text" id="msgInput-name" placeholder="anonymous" 
-                    value={this.state.name} onChange={(e) => this.handleNameChange(e)}/><br/>
-                <label for="comment">Comment: </label><br/>
-                <textarea className="form-control" type="text" id="msgInput-message" rows = "4" placeholder="Type your comment here!"
-                    value={this.state.comment} onChange={(e)=> this.handleCommentChange(e)}/><br/>
-                <input type="button" class="btn btn-default" value="post" onClick={(event) => this.handleSubmit(event)}/>
+            <section className = "section-height-default">
+                <div className = "container-fluid-self form-group">
 
-                <p id="statusbar">{this.state.status}</p>
+                    <label for="usr">Your Name:  </label> <span className="span"/><span className="span"/><span className="span"/>
+                    <input type="text" id="msgInput-name" placeholder="anonymous" 
+                        value={this.state.name} onChange={(e) => this.handleNameChange(e)}/><br/>
+                    <label for="comment">Comment: </label><br/>
+                    <textarea className="form-control" type="text" id="msgInput-message" rows = "4" placeholder="Type your comment here!"
+                        value={this.state.comment} onChange={(e)=> this.handleCommentChange(e)}/><br/>
+                    <input type="button" class="btn btn-default" value="post" onClick={(event) => this.handleSubmit(event)}/>
 
-            </div>
-            <div className = "container-fluid-self form-group msg-board">
+                    <p id="statusbar">{this.state.status}</p>
+
+                </div>
+            </section>
+
+            <section className = "section-height-default">
+                <div className = "container-fluid-self form-group msg-board">
                 
-                <ul className="msg-list">
-                {(this.state.items.map( (item,index)=>{
-                    const date = new Date(item.date);
-                    return(
-                        <div className="msg-item">
-                            <h5 className="headtext-rendered"> {index + 1}. {item.client_name} Commented In {date.getMonth() + 1 + "-"+ date.getDate() + "-" +date.getFullYear()}</h5>
-                            <span className="qtext-rendered">{item.msg}</span>
-                            <br/>
-                        </div>
-                    )
-                }))}
-                </ul>
-            </div>
+                    {(this.state.items.map( (item,index)=>{
+                        const date = new Date(item.date);
+                        return(
+                            <div className="msg-item">
+
+                                <header>
+                                        <span className="text-hightlight-brown ">{item.client_name}</span> wrote
+                                        <time className="time" datetime={date.getFullYear()+"-"+date.getMonth() + 1 + "-"+ date.getDate()}> — { this.state.month[date.getMonth()]+ " "+ date.getDate() + ", " +date.getFullYear()}</time>
+
+                                    </header>
+                                    <div className="comment-content">
+                                        <p><p className="qtext-rendered">{item.msg}</p>
+                                        </p>
+                                    </div>
+                            </div>
+                        )
+                    }))}
+
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+            </section>
+
+            
+        
         </div>
         )
     }

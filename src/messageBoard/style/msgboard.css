@@ -1,14 +1,43 @@
 .form-group{
-
-    padding-top: 10%;
-    color: black;
     text-align: left;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 0%;
+    margin: 0%;
 }
 
-.msg-board{
-    color: white;
+#msgInput-name,#msgInput-message{
+    opacity: 0.4;
+    color: black;
+}
+
+
+@media (min-width: 768px){
+    .section-height-full{
+        height: 100vh;
+        position: relative;
+    }
+    
+}
+
+.text-hightlight-brown{
+    font-weight: 900;
+}
+
+.time{
+    font-weight: 400;
+    font-size: .9em;
+    color: #fffffe;
+    letter-spacing: 0.4px; 
+    background-position: center 72%;
+}
+
+.overlay{
+    background-image: url("https://images.unsplash.com/photo-1476908965434-f988d59d7abd?ixlib=rb-0.3.5&q=99&fm=jpg&crop=entropy&cs=tinysrgb&w=2048&fit=max&s=3fec23b3e522820a1b5e6870ee032b57");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 .msg-list{
