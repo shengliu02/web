@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import Home from './components/about';
 import NavBar from './components/nav';
 import Footer from './components/footer';
-import '../public/index.css';
+import LeftNavBar from './components/LeftNavBar';
+import './styles/index.css';
 
 class App extends Component {
     render(){
@@ -10,6 +11,7 @@ class App extends Component {
         return(
             <div>
                 <NavBar />
+                <LeftNavBar/>
                 <Home/>
                 <Footer/>
             </div>

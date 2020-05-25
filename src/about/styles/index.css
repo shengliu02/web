@@ -38,7 +38,7 @@
 
 
 .profileIMG-circle{
-    background-image: url("../about/images/Sheng.png");
+    background-image: url("../assets/Sheng.png");
     border-radius: 50%;
     height: 200px;
     width: 200px;
@@ -100,7 +100,7 @@ body{
 
 .background-container{
 
-    background-image: url('../about/images/bg.gif');
+    background-image: url('../assets/bg.gif');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;

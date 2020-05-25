@@ -1,4 +1,5 @@
 import React,{ Component } from "react";
+import '../styles/footer.css';
 
 class Footer extends Component{
 
@@ -12,35 +13,36 @@ class Footer extends Component{
                 url: "mailto:sheng1302@gmail.com"
             },
             images:{
-                git_img:require('../images/gh.svg'),
-                email_img: require('../images/envelope.png')
+                git_img:require('../assets/gh.svg'),
+                email_img: require('../assets/envelope.png')
             }
         }
     }
     render(){
         return(
-            <div className="contact-bg" id="contact">
-               
-            <div className="content">
-                <h3>Aspiring to become a Software Engineer.</h3>
-                <ul className="social-icon-list">
-                    <li className="social-icon-item"> 
-                        <a className="link" href={this.state.github.url}>
-                            <img className="social-icon-img" src={this.state.images.git_img} alt="More projects on github"/> </a>
-                    </li>
+            
+            <div className="footer">
+                <div className="content">
+                    <h3>Aspiring to become a Software Engineer.</h3>
+                    <ul className="social-icon-list">
+                        <li className="social-icon-item"> 
+                            <a className="link" href={this.state.github.url}>
+                                <img className="social-icon-img" src={this.state.images.git_img} alt="More projects on github"/> </a>
+                        </li>
 
-                    <li className="social-icon-item"> 
-                        <a className="link" href={this.state.personal.url} >
-                            <img className="social-icon-img" src={this.state.images.email_img} alt="Contact me through Email"/> </a>
-                    </li>
+                        <li className="social-icon-item"> 
+                            <a className="link" href={this.state.personal.url} >
+                                <img className="social-icon-img" src={this.state.images.email_img} alt="Contact me through Email"/> </a>
+                        </li>
 
-                </ul>
+                    </ul>
                 </div>
 
-            
+                
+                
             </div>
 
-        )
+        );
     }
 }
 

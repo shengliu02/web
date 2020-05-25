@@ -8,6 +8,11 @@ module.exports = {
     path: DIST_DIR,
     filename: 'bundle.js',
   },
+  devServer: {
+    contentBase: DIST_DIR,
+    compress: true,
+    port: 8080
+  },
   resolve: {
     extensions: ['.js', '.jsx', '.json', '.css']
   },

@@ -21,7 +21,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.0.17",
     "url-loader": "^1.0.1",
-    "webpack": "^4.12.1"
+    "webpack": "^3.11.0"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -34,12 +34,14 @@
     "start": "node ./src/server/index.js",
     "build": "webpack -p",
     "react-dev": "webpack -d --watch",
+    "react-server": "webpack-dev-server --open --mode development",
     "server-dev": "nodemon ./src/server/index.js"
   },
   "devDependencies": {
     "css-loader": "^1.0.0",
     "gh-pages": "^1.1.0",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.11.0"
   },
   "description": "Sheng Liu's Personal Website - Aspiring to Become a Software Engineer.",
   "main": "index.js",

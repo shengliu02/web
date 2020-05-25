@@ -20,9 +20,13 @@ class NavBar extends Component{
                         <li className="nav-item" >
                             <Link to="/">Profile</Link></li>
                         <li className="nav-item">
-                            <Link to="/blog">Blog</Link></li>
+                            <Link to="/resume">Resume</Link></li>
                         <li className="nav-item">
-                            <Link to="/msgboard">Comments</Link></li>
+                            <a href="https://github.com/shengliu02">Github</a></li>
+                        <li className="nav-item">
+                            <a href="https://www.linkedin.com/in/shengliu02/">LinkedIn</a></li>
+                        {/* <li className="nav-item">
+                            <Link to="/msgboard">Comments</Link></li> */}
                     </ul>
 
                     </div>

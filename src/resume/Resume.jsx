@@ -5,7 +5,7 @@ class Resume extends Component{
     render(){
         return(
 
-                <iframe className="resume-viewer"  src = "./ShengResume.pdf"> </iframe>
+            <iframe className="resume-viewer"  src = "./ShengResume.pdf"> </iframe>
 
         )
     }
